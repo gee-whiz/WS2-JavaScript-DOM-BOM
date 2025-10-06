@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Media Page</title>
+</head>
+<body>
+  <h1>Media Page</h1>
+  <p>This is the media page. You were redirected here because your browser userAgent included "Mozilla".</p>
+  <p><a href="exercise1.html">Back to exercise1.html</a></p>
+  <!-- Confirmation dialog example: confirm() returns a boolean (true for OK, false for Cancel) -->
+  <p>
+    <button id="confirmBtn">Am I a student?</button>
+    <span id="confirmResult" style="margin-left:10px;color:#333;"></span>
+  </p>
+  <script>
+    // When clicked, show a yes/no confirmation dialog and display the boolean result
+    document.getElementById('confirmBtn').addEventListener('click', function () {
+      const answer = confirm("Are you a student?"); // returns true (OK) or false (Cancel)
+      document.getElementById('confirmResult').innerHTML = String(answer);
+    });
+  </script>
+</body>
+</html>
